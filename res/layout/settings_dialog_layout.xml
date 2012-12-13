@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/settingsDialogHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Settings"
+        android:textColor="#FFB5E61D"
+        android:textSize="15pt"
+        android:textStyle="bold" />
+    
+    <TextView 
+        android:id="@+id/settingsNicknameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settingsDialogHeader"
+        android:layout_alignRight="@+id/settingsSyncIntervalLabel"
+        android:layout_marginTop="5pt"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Nickname:"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/nicknameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/settingsNicknameLabel"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/settingsNicknameLabel"
+        android:ems="10" />
+    
+    <TextView
+        android:id="@+id/settingsSyncIntervalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5pt"
+        android:layout_below="@+id/nicknameEditText"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Sync Delay:"
+        android:textSize="8pt"
+        android:textStyle="bold" />
+    
+    <EditText
+        android:id="@+id/syncDelayEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/settingsSyncIntervalLabel"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/settingsSyncIntervalLabel"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/saveSettingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/discardSettingsButton"
+        android:layout_above="@+id/discardSettingsButton"
+        android:layout_marginBottom="2dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/discardSettingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Cancel" />
+
+</RelativeLayout>

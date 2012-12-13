@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/messageListHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Messages"
+        android:textColor="#FFB5E61D"
+        android:textSize="15pt"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/messageListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/writeMessageLabel"
+        android:layout_below="@id/messageListHeader"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/emptyList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/messageListView"
+        android:layout_alignTop="@+id/messageListView"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="No Messages"
+        android:visibility="gone"
+        android:textColor="#FFFFC90E"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/writeMessageLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/messageEditView"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Write Message"
+        android:textColor="#FFB5E61D"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/messageEditView"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:gravity="top|left"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="6"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:layout_above="@+id/sendMessageButton"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/sendMessageButton"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="Send Message" />
+
+</RelativeLayout>
