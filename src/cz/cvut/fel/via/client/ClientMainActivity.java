@@ -37,7 +37,7 @@ public class ClientMainActivity extends Activity
     public static final String SETTING_LAST_MESSAGE_ID = "last-message-id";
     
     /* FIXME: This should definitely point someplace with a running VIAServer. */
-    public static final String MESSAGE_SERVER_LOCATION = "http://46.255.228.228:8080";
+    // public static final String MESSAGE_SERVER_LOCATION = "VIAServer IP-address";
 
     private static final int MESSAGE_LIST_ITEM_DELETE = 0;
 
